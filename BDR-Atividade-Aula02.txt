@@ -1,0 +1,21 @@
+-- 1. Criar o banco de dados
+CREATE DATABASE queimadas_db;
+
+-- 2. Selecionar o banco de dados
+USE queimadas_db;
+
+-- 3. Criar a tabela focos_calor
+CREATE TABLE focos_calor (
+    estado VARCHAR(50),
+    bioma VARCHAR(50),
+    data_ocorrencia DATE
+);
+
+-- 4. Inserir os registros
+INSERT INTO focos_calor (estado, bioma, data_ocorrencia) VALUES
+('Amazonas', 'Amazônia', '2025-02-01'),
+('Mato Grosso', 'Cerrado', '2025-02-03'),
+('Pará', 'Amazônia', '2025-02-05');
+
+-- 5. Consultar os dados inseridos
+SELECT * FROM focos_calor;
